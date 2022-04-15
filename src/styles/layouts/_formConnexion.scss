@@ -1,0 +1,35 @@
+aside {
+    width: 100%;
+    > .blockForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: none;
+        box-sizing: border-box;
+        //padding: 10px;
+        > .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            box-sizing: border-box;
+            width: 100%;
+            > .inputDiv {
+                margin-bottom: 25px;
+                > label {
+                    color: black;
+                    background-color: $Beige;
+                }
+                > input {
+                    border: none;
+                    outline: none;
+                    border-bottom: 2px solid $Brown;
+                    width: 100%;
+                    color: grey;
+                    background-color: $Beige;
+                }
+            }
+        }
+    }
+}

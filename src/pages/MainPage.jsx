@@ -10,7 +10,7 @@ function MainPage() {
             <Logo />
             <p>Une rencontre gastronomique, ça vous tente ?</p>
             <div className="blockSignin">
-                <Button label="Se connecter" className="connexion" />
+                <Button label="Se connecter" className="connexion" onClick={() => window.location.href = `/connexion`}/>
                 <hr></hr>
                 <Button label="S'inscrire" className="signin" />
             </div>
