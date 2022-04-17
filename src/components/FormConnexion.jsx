@@ -21,14 +21,14 @@ function FormConnexion() {
 
     return (
         <aside>
-            <div className='blockForm'>
+            <div className='blockFormConnexion'>
                 <form method="post" className='form'>
                     <div className='inputDiv'>
                         <label for="email">Email</label><br></br>
                         <input type="text" name="email" id="email" value={emailInputValue} onChange={(e) => setEmailInputValue(e.target.value)} required/>
                     </div>
                     <div className='inputDiv'>
-                        <label for="password">Password</label><br></br>
+                        <label for="password">Mot de passe</label><br></br>
                         <input type="password" name="password" id="password" value={passwordInputValue} onChange={(e) => setPasswordInputValue(e.target.value)} required/>
                     </div>
                     <div className='button'>
@@ -37,6 +37,7 @@ function FormConnexion() {
                             e.preventDefault();
                             }}>
                         </input>
+                        <p>Mot de passe oublié ?</p>
                     </div>  
                 </form>
             </div>

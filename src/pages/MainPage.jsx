@@ -12,7 +12,7 @@ function MainPage() {
             <div className="blockSignin">
                 <Button label="Se connecter" className="connexion" onClick={() => window.location.href = `/connexion`}/>
                 <hr></hr>
-                <Button label="S'inscrire" className="signin" />
+                <Button label="S'inscrire" className="signin" onClick={() => window.location.href = `/signin`}/>
             </div>
         </div>
     );

@@ -1,0 +1,55 @@
+.blockFormInfo {
+    width: 100%;
+    height: 60vh;
+    > .form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center;
+        box-sizing: border-box;
+        height: 60vh;
+        > .inputDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0px;
+            width: 100%;
+            height: 40%;
+            > label {
+                font-family: 'Kalam';
+                color: $Brown;
+                font-size: 28px;
+                background-color: $Beige;
+                font-weight: 600;
+            }
+            > select {
+                font-family: 'Kalam';
+                color: $Brown;
+                font-size: 24px;
+                background-color: $Beige;
+                width: 80%;
+                height: 50px;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid $Brown;
+                padding: 10px;
+            }
+        }
+        > .button {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            > p {
+                font-family: 'Kalam';
+                color: $Brown;
+                margin-top: 0px;
+            }
+        }
+    }
+}
