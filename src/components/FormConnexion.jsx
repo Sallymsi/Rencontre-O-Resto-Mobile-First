@@ -25,7 +25,7 @@ function FormConnexion() {
                 <form method="post" className='form'>
                     <div className='inputDiv'>
                         <label for="email">Email</label><br></br>
-                        <input type="text" name="email" id="email" value={emailInputValue} onChange={(e) => setEmailInputValue(e.target.value)} required/>
+                        <input type="email" name="email" id="email" value={emailInputValue} onChange={(e) => setEmailInputValue(e.target.value)} required/>
                     </div>
                     <div className='inputDiv'>
                         <label for="password">Mot de passe</label><br></br>

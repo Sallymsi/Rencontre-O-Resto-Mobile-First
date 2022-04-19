@@ -1,29 +1,11 @@
-import React from 'react';
-import { useState } from 'react'
+import React from 'react'
 import '../styles/main.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/fontawesome-free-solid'
+//import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons'
 
-function FormGender() {
-    const [genderInputValue, setGenderInputValue] = useState('')
 
-    let arrow = <FontAwesomeIcon icon={faArrowRight} />;
-
-    const handleClick = (e) => {
-        e.preventDefault();
-
-        if (genderInputValue !== '') {
-            const document = {
-                genre: genderInputValue,
-            };
-
-            const options = {
-                method: "POST",
-                body: JSON.stringify(document),
-                headers: {"Content-type": "application/json"},
-            };
-        }
-    }
+function FormGender({setIsGender},{setGenderInputValue}) {
 
 
     return (
@@ -39,7 +21,7 @@ function FormGender() {
                         </select>
                     </div>
                     <div className='button'>
-                        <input type="submit" value="Suivant" className='connexion' onClick={handleClick}>{arrow}</input>
+                        <button type="submit" value="Suivant" className='connexion' onClick={() => setIsGender(true)}>Suivant <FontAwesomeIcon size="xs" icon={faChevronRight}/></button>
                     </div>  
                 </form>
             </div>
@@ -48,3 +30,4 @@ function FormGender() {
 }
 
 export default FormGender
+

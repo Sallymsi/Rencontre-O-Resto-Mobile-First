@@ -1,15 +1,17 @@
 import React from 'react';
-import FormGender from '../components/FormGender';
+import BlockInfo from '../components/BlockInfo';
 import '../styles/main.scss'
 
 function FormInfo() {
+
+
     return (
         <div className='formInfo'>
             <div>
                 <p>Afin de mieux</p>
                 <p>vous connaître...</p>
             </div>
-            <FormGender />
+            <BlockInfo />
         </div>
     )
 }
