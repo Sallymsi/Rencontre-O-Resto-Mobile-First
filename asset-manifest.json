@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Rencontre-O-Resto-Mobile-First/static/css/main.884e89c4.css",
+    "main.js": "/Rencontre-O-Resto-Mobile-First/static/js/main.5712a3b3.js",
+    "static/js/787.83b7e1f2.chunk.js": "/Rencontre-O-Resto-Mobile-First/static/js/787.83b7e1f2.chunk.js",
+    "static/media/Logo1.png": "/Rencontre-O-Resto-Mobile-First/static/media/Logo1.dea2c8ac69f9e9f77e50.png",
+    "index.html": "/Rencontre-O-Resto-Mobile-First/index.html",
+    "main.884e89c4.css.map": "/Rencontre-O-Resto-Mobile-First/static/css/main.884e89c4.css.map",
+    "main.5712a3b3.js.map": "/Rencontre-O-Resto-Mobile-First/static/js/main.5712a3b3.js.map",
+    "787.83b7e1f2.chunk.js.map": "/Rencontre-O-Resto-Mobile-First/static/js/787.83b7e1f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.884e89c4.css",
+    "static/js/main.5712a3b3.js"
+  ]
+}
