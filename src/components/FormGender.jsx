@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/main.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/fontawesome-free-solid'
-//import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons'
+
 
 
 function FormGender({setIsGender},{setGenderInputValue}) {

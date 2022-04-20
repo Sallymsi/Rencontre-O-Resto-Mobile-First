@@ -6,6 +6,7 @@ import Connexion from './pages/Connexion';
 import Signin from './pages/Signin';
 import reportWebVitals from './reportWebVitals';
 import FormInfo from './pages/FormInfo';
+import Profil from './pages/Profil';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
               <Route path="/connexion" element={<Connexion />}></Route>
               <Route path="/signin" element={<Signin />}></Route>
               <Route path="/formInfo" element={<FormInfo />}></Route>
+              <Route path="/profil" element={<Profil />}></Route>
           </Routes>
       </BrowserRouter>
   </React.StrictMode>,

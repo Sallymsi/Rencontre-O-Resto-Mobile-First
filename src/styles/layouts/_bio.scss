@@ -1,0 +1,18 @@
+.blockBio {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    > h2 {
+        font-family: 'Kalam';
+        color: $DarkBlue;
+        margin: 0 0 0 10px;
+    }
+    > p {
+        font-family: 'Kalam';
+        color: $DarkBlue;
+        line-height: 20px;
+        text-align: justify;
+        margin: 0px;
+        padding: 0 10px 0 10px;
+    }
+}

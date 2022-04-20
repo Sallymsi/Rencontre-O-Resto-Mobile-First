@@ -1,8 +1,13 @@
-import React from 'react';
-import BlockInfo from '../components/BlockInfo';
+import React, { useState } from 'react';
+import FormGender from '../components/FormGender'
+import FormBirth from '../components/FormBirth'
 import '../styles/main.scss'
 
 function FormInfo() {
+    const [genderInputValue, setGenderInputValue] = useState('')
+    const [birthInputValue, setBirthInputValue] = useState('')
+    const [isGender, setIsGender] = useState(false);
+    const [isBirth, setIsBirth] = useState(false);
 
 
     return (
@@ -11,7 +16,17 @@ function FormInfo() {
                 <p>Afin de mieux</p>
                 <p>vous connaître...</p>
             </div>
-            <BlockInfo />
+            <div className='BlockForm'>
+                {!isGender && (
+                    <FormGender setIsGender={setIsGender} setGenderInputValue={setGenderInputValue} />
+                )}
+                {isGender && !isBirth && (
+                    <FormBirth setIsBirth={setIsBirth} setBirthInputValue={setBirthInputValue}/>
+                )}
+                {isGender && isBirth && (
+                    <FormBirth setIsBirth={setIsBirth} />
+                )}
+            </div>
         </div>
     )
 }

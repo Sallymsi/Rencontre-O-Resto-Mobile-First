@@ -1,0 +1,14 @@
+.blockPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    > .circlePic {
+        background-color: $DarkBlue;
+        border-radius: 50%;
+        border: 6px solid $LightPink;
+        width: 140px;
+        height: 140px;
+    }
+}

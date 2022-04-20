@@ -1,0 +1,44 @@
+.fondProfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $DarkBlue;
+    height: 100vh;
+    > .profilPage {
+        display: flex;
+        flex-direction: column;
+        background-color: $Beige;
+        border-radius: 15px;
+        height: 98vh;
+        width: 96vw;
+        > h1 {
+            font-family: 'Kalam';
+            text-align: center;
+            color: $DarkBlue;
+            margin: 0px;
+            margin-top: 15px;
+            line-height: 32px;
+        }
+        > h2 {
+            position: relative;
+            font-family: 'Kalam';
+            text-align: center;
+            color: $DarkBlue;
+            margin: 0px;
+            > .locationDot {
+                font-family: 'Kalam';
+                color: $LightPink;
+                font-size: 20px;
+            }
+            &::before {
+                content: ' ';
+                position: absolute;
+                left: 20%;
+                bottom: 0px;
+                background-color: $LightPink;
+                width: 60%;
+                height: 2px;
+            }
+        }
+    }
+}         
