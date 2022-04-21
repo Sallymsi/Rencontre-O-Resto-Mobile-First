@@ -3,6 +3,7 @@ import '../styles/main.scss'
 import Header from '../components/Header'
 import IconProfil from '../components/IconProfil'
 import Bio from '../components/Bio'
+import Activities from '../components/Activities'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import { faLocationDot } from '@fortawesome/fontawesome-free-solid'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
@@ -20,6 +21,7 @@ function Profil() {
                 <h1>Prénom Nom</h1>
                 <h2><FontAwesomeIcon icon={faLocationDot} className='locationDot'/> Location</h2>
                 <Bio />
+                <Activities />
             </div>
         </div>
     )

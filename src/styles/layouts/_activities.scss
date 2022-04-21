@@ -1,0 +1,24 @@
+.blockActivities {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    > h2 {
+        font-family: 'Kalam';
+        color: $DarkBlue;
+        margin: 0 0 0 10px;
+    }
+    > .case {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        > div {
+            border-radius: 15px;;
+            width: 10%;
+            padding: 10px 15px;
+            background-color: $LightPink;
+            text-align: center;
+            font-family: 'Kalam';
+            box-shadow: 3px 5px 8px grey;
+        }
+    }
+}

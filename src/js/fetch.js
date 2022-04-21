@@ -1,14 +1,14 @@
-const url = 'http://localhost:4000/api/auth/signup/';
+const urlSignin = 'http://localhost:4000/api/auth/signup/';
 const urlLogin = 'http://localhost:4000/api/auth/login/';
 
 
 // Création de la requête POST pour l'inscription :
 export function signin(options) {
-    fetch(url, options)
+    fetch(urlSignin, options)
         .then(resp => resp.json())
   
         .then((data) => {
-            //window.location.href = `/register`;
+            window.location.href = `/formInfo`;
         })
 };
 
