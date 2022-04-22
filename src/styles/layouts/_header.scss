@@ -7,12 +7,16 @@ Header {
         font-family: 'Kalam';
         margin: 10px 0;
     }
-    > .chevron {
-        color: $DarkBlue;
-        font-size: 32px;
-    }
-    > .setting {
-        color: $DarkBlue;
-        font-size: 32px;
-    }
 }
+
+.chevron {
+    color: $DarkBlue;
+    font-size: 32px;
+}
+.setting {
+    color: $DarkBlue;
+    font-size: 32px;
+}
+
+
+

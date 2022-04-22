@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require("path");
 const app = express();
 const userRoutes = require('./routes/user');
 
@@ -14,6 +15,9 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
 });
+
+// Initialisation des routes pour les fichiers/images utilisateurs :
+app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Initialisation des routes Post et Users :
 app.use('/api/auth', userRoutes);

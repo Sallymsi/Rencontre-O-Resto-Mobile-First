@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import '../styles/main.scss'
 
-function IconProfil() {
-    const [profilPic, setProfilPic] = useState('');
+function IconProfil({image}) {
+
 
     return (
         <div className="blockPic">
             <div className="circlePic">
-                <img src={profilPic} alt="photo de profil" />
+                <img src={image} alt="photo de profil" />
             </div>
         </div>
     )

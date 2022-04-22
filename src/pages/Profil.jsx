@@ -1,27 +1,29 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/main.scss'
 import Header from '../components/Header'
 import IconProfil from '../components/IconProfil'
 import Bio from '../components/Bio'
-import Activities from '../components/Activities'
+import { getUser } from '../js/fetch'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { faLocationDot } from '@fortawesome/fontawesome-free-solid'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 function Profil() {
-    const [FullName, setFullName] = useState('');
-    const [location, setLocation] = useState('');
+    let userId = sessionStorage.getItem("userId");
+    const [infoProfil, setInfoProfil] = useState([]);
+
+    useEffect(() => {
+        getUser(userId).then((data) => setInfoProfil(data))
+    }, []);
 
 
     return (
         <div className="fondProfil">
             <div className='profilPage'>
                 <Header label='PROFIL'/>
-                <IconProfil />
-                <h1>Prénom Nom</h1>
-                <h2><FontAwesomeIcon icon={faLocationDot} className='locationDot'/> Location</h2>
+                <IconProfil image={infoProfil.image}/>
+                <h1>{infoProfil.nom} {infoProfil.prenom}</h1>
+                <h2><FontAwesomeIcon icon={faLocationDot} className='locationDot'/> {infoProfil.location}, {infoProfil.postal}</h2>
                 <Bio />
-                <Activities />
             </div>
         </div>
     )

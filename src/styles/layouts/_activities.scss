@@ -20,5 +20,27 @@
             font-family: 'Kalam';
             box-shadow: 3px 5px 8px grey;
         }
+        > .buttonOff {
+            font-family: 'Kalam';
+            background-color: $LightPink;
+            border-radius: 15px;
+            padding: 10px;
+            border: none;
+        }
+        > .buttonOn {
+            background-color: darken($LightPink, 10%);
+            color: $Beige;
+            font-family: 'Kalam';
+            border-radius: 15px;
+            padding: 10px;
+            border: none;
+        }
+    }
+    > .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
+
+
